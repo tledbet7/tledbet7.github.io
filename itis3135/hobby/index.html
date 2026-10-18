@@ -1,0 +1,535 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solitude in Color | Home</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <style>
+        :root {
+            --pink: #F3B7C5;
+            --blue: #B8DDF2;
+            --green: #B9D9AF;
+            --lavender: #B5A0D5;
+            --cream: #FFF8F5;
+            --text: #403448;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--cream);
+            color: var(--text);
+            font-family: "Trebuchet MS", Arial, sans-serif;
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: var(--pink);
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .tagline {
+            margin: 5px 0 20px;
+            font-style: italic;
+        }
+
+        nav {
+            background-color: var(--blue);
+            border-radius: 30px;
+            padding: 15px;
+            max-width: 950px;
+            margin: auto;
+        }
+
+        nav a {
+            display: inline-block;
+            color: var(--text);
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 15px;
+        }
+
+        nav a:hover,
+        nav a:focus-visible,
+        nav a.active {
+            background-color: var(--green);
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 950px;
+            min-height: 350px;
+            margin: 35px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: #FFFFFF;
+            border: 3px solid var(--lavender);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(64, 52, 72, 0.08);
+        }
+
+        section[hidden] {
+            display: none;
+        }
+
+        h2 {
+            color: #66508A;
+            border-bottom: 4px solid var(--green);
+            padding-bottom: 10px;
+        }
+
+        figure {
+            max-width: 500px;
+            margin: 25px auto;
+            text-align: center;
+        }
+
+        figure img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            border: 3px solid var(--lavender);
+        }
+
+        figcaption {
+            margin-top: 10px;
+            font-size: 0.95rem;
+            font-style: italic;
+        }
+
+        .image-note {
+            font-style: italic;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        footer {
+            background-color: var(--green);
+            padding: 25px;
+            text-align: center;
+        }
+
+        footer a {
+            color: var(--text);
+            font-weight: bold;
+        }
+
+        .validation-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .validation-links a {
+            background-color: var(--cream);
+            padding: 8px 14px;
+            border: 2px solid #66508A;
+            border-radius: 12px;
+            text-decoration: none;
+        }
+
+        .validation-links a:hover,
+        .validation-links a:focus-visible {
+            background-color: var(--blue);
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            nav {
+                border-radius: 15px;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Solitude in Color</h1>
+        <p class="tagline">Making Quiet Moments Beautiful</p>
+
+        <nav aria-label="Hobby navigation">
+            <a href="#what" class="active" aria-current="page">What</a> ✿
+            <a href="#who">Who</a> ✿
+            <a href="#when">When</a> ✿
+            <a href="#where">Where</a> ✿
+            <a href="#how">How</a> ✿
+            <a href="#why">Why</a> ✿
+            <a href="#ai-prompts">AI Prompts</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="what">
+            <h2>What: Welcome to Solitude in Color</h2>
+
+            <p>
+                Coloring is one of my favorite creative hobbies.
+                I especially enjoy coloring books from Coco Wyo,
+                the Berrie Coloring series, and Bobbie Goods. Their
+                cute illustrations and everyday scenes make coloring
+                fun and give me opportunities to experiment with
+                different colors.
+            </p>
+
+            <p>
+                Solitude in Color is a space where I can share my
+                interest in coloring, the supplies I enjoy using,
+                and the little things that make this hobby special
+                to me.
+            </p>
+
+            <figure>
+                <img src="images/IMG_2546.jpeg"
+                     alt="A bear in a raincoat holding an umbrella beside kittens"
+                     loading="lazy">
+                <figcaption>
+                    A rainy-day bear and kittens from one of my
+                    coloring books.
+                </figcaption>
+            </figure>
+
+            <p class="image-note">
+                This is my own photograph of a coloring page.
+                No AI prompt was used to generate the image.
+            </p>
+        </section>
+
+        <section id="who" hidden>
+            <h2>Who: The Person Behind the Colors</h2>
+
+            <p>
+                I'm someone who enjoys creative hobbies that allow
+                me to spend time doing something for myself.
+                I have other hobbies like reading, journaling,
+                and planning. But coloring is one of those activities
+                where I can work at my own pace and be creative
+                without worrying about getting everything perfect.
+            </p>
+
+            <p>
+                I enjoy coloring books with cozy illustrations,
+                cute characters, and scenes that leave room
+                for creativity.
+            </p>
+
+            <figure>
+                <img src="images/IMG_2548.jpeg"
+                     alt="A bear holding lemonade beside a colorful lemonade stand"
+                     loading="lazy">
+                <figcaption>
+                    A colorful lemonade stand scene from my collection.
+                </figcaption>
+            </figure>
+
+            <p class="image-note">
+                This is a personal photograph of my coloring work.
+                No AI image-generation prompt was used.
+            </p>
+        </section>
+
+        <section id="when" hidden>
+            <h2>When: Finding Time to Color</h2>
+
+            <p>
+                Coloring is a hobby I can enjoy whenever I have
+                some free time. I don't need a strict schedule,
+                which makes it easy to fit into my day.
+            </p>
+
+            <p>
+                Whether I have a few minutes or enough time
+                to finish an entire page, I can pick up where
+                I left off and continue creating.
+            </p>
+
+            <figure>
+                <img src="images/IMG_2545.jpeg"
+                     alt="A cozy indoor scene with a character reading beside a duck"
+                     loading="lazy">
+                <figcaption>
+                    A cozy reading scene with soft pink and green details.
+                </figcaption>
+            </figure>
+
+            <p class="image-note">
+                I photographed this coloring page myself.
+                AI was not used to generate the image.
+            </p>
+        </section>
+
+        <section id="where" hidden>
+            <h2>Where: My Favorite Coloring Spaces</h2>
+
+            <p>
+                One of the things I like about coloring is that
+                I can do it almost anywhere. All I really need
+                is a comfortable place, my coloring book,
+                and my supplies.
+            </p>
+
+            <p>
+                A quiet space with good lighting and enough room
+                to spread out my markers makes the experience
+                even better.
+            </p>
+
+            <figure>
+                <img src="images/IMG_2547.jpeg"
+                     alt="An autumn garden with pumpkins, a small house, and cute characters"
+                     loading="lazy">
+                <figcaption>
+                    A warm autumn garden scene from my coloring book.
+                </figcaption>
+            </figure>
+
+            <p class="image-note">
+                This is my own photograph.
+                No AI image-generation prompt was used.
+            </p>
+        </section>
+
+        <section id="how" hidden>
+            <h2>How: Getting Started With Coloring</h2>
+
+            <p>
+                Getting started with coloring is pretty simple.
+                You just need a coloring book and something
+                to color with, such as crayons, markers,
+                or colored pencils. I personally love
+                Ohuhu alcohol markers!
+            </p>
+
+            <p>
+                I really like the books from Coco Wyo,
+                Berrie Coloring, and Bobbie Goods because
+                of their cozy designs and cute characters.
+                I like choosing color palettes that work
+                well together and experimenting with different
+                coloring techniques I learn on TikTok.
+            </p>
+
+            <figure>
+                <img src="images/IMG_2543.jpeg"
+                     alt="A brown bear holding a flower surrounded by blue flowers"
+                     loading="lazy">
+                <figcaption>
+                    A cute bear holding a flower from my Berrie
+                    coloring book.
+                </figcaption>
+            </figure>
+
+            <p class="image-note">
+                This is my personal photograph.
+                AI was not used to generate the image.
+            </p>
+        </section>
+
+        <section id="why" hidden>
+            <h2>Why: The Joy of Coloring</h2>
+
+            <p>
+                I enjoy coloring because it gives me a chance
+                to be creative without having to make something
+                from scratch. The design is already there,
+                and I get to decide how to bring it to life.
+            </p>
+
+            <p>
+                I also like that there isn't just one correct
+                way to color a page. Everyone can use different
+                colors and techniques to create whatever
+                they desire.
+            </p>
+
+            <figure>
+                <img src="images/IMG_2544.jpeg"
+                     alt="A brown bear sitting on a swing surrounded by flowers and bees"
+                     loading="lazy">
+                <figcaption>
+                    A cute little bear illustration from my Berrie
+                    Coloring book.
+                </figcaption>
+            </figure>
+
+            <p class="image-note">
+                This photograph is my own work.
+                No AI image-generation prompt was used.
+            </p>
+        </section>
+
+        <section id="ai-prompts" hidden>
+            <h2>AI Prompts</h2>
+
+            <p>
+                I used ChatGPT to help plan the structure,
+                styling, and functionality of this hobby website.
+                I chose the hobby, website name, color palette,
+                and personal content direction.
+            </p>
+
+            <p>
+                The images on this website are photographs
+                of my own coloring pages. AI was not used
+                to generate the artwork or photographs.
+            </p>
+
+            <figure>
+                <img src="images/IMG_2542.jpeg"
+                     alt="A mouse and yellow duck surrounded by colorful groceries in a refrigerator"
+                     loading="lazy">
+                <figcaption>
+                    A mouse and duck surrounded by colorful groceries
+                    in one of my completed coloring pages.
+                </figcaption>
+            </figure>
+
+            <p class="image-note">
+                No AI image-generation prompt was used.
+                This is an original photograph of my coloring work.
+            </p>
+
+            <h3>Examples of AI Assistance</h3>
+
+            <ul>
+                <li>
+                    Help create a hobby website about coloring
+                    with seven sections that behave like separate pages.
+                </li>
+                <li>
+                    Use blush pink, pastel sky blue, soft green,
+                    and lavender for the website design.
+                </li>
+                <li>
+                    Make the navigation display only one section
+                    at a time using JavaScript.
+                </li>
+                <li>
+                    Help organize my coloring photographs
+                    and captions for the website.
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Page designed by
+            <a href="../tlwebdesigns.com/index.html">
+                TL Web Designs
+            </a>
+        </p>
+
+        <p>&copy; 2026 Solitude in Color</p>
+
+        <p>Website Validation:</p>
+
+        <p class="validation-links">
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Ftledbet7%2Fitis3135%2Fhobby%2F"
+               target="_blank"
+               rel="noopener noreferrer">
+                HTML Validation
+            </a>
+
+            ✿
+
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Ftledbet7%2Fitis3135%2Fhobby%2F"
+               target="_blank"
+               rel="noopener noreferrer">
+                CSS Validation
+            </a>
+
+            ✿
+
+            <a href="https://wave.webaim.org/report#/https://webpages.charlotte.edu/tledbet7/itis3135/hobby/"
+               target="_blank"
+               rel="noopener noreferrer">
+                Accessibility Validation
+            </a>
+        </p>
+    </footer>
+
+    <script>
+        const sections = document.querySelectorAll("main section");
+        const navLinks = document.querySelectorAll("nav a");
+
+        function showSection(sectionId) {
+            const selectedSection = document.getElementById(sectionId);
+
+            if (!selectedSection) {
+                return;
+            }
+
+            sections.forEach((section) => {
+                section.hidden = section.id !== sectionId;
+            });
+
+            navLinks.forEach((link) => {
+                const isActive =
+                    link.getAttribute("href") === "#" + sectionId;
+
+                link.classList.toggle("active", isActive);
+
+                if (isActive) {
+                    link.setAttribute("aria-current", "page");
+                } else {
+                    link.removeAttribute("aria-current");
+                }
+            });
+        }
+
+        navLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+                const sectionId =
+                    link.getAttribute("href").substring(1);
+
+                showSection(sectionId);
+            });
+        });
+
+        const initialSection = window.location.hash.substring(1);
+
+        showSection(
+            document.getElementById(initialSection)
+                ? initialSection
+                : "what"
+        );
+
+        window.addEventListener("hashchange", () => {
+            const sectionId = window.location.hash.substring(1);
+
+            showSection(
+                document.getElementById(sectionId)
+                    ? sectionId
+                    : "what"
+            );
+        });
+    </script>
+</body>
+</html>
