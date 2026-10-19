@@ -3,7 +3,8 @@ body {
     font-family: Arial, sans-serif;
     background-color: #EAEAEA;
     color: #313D5A;
-    margin: 0;
+    max-width: 1200px;
+    margin: 0 auto;
     line-height: 1.6;
 }
 
@@ -14,8 +15,20 @@ header {
     padding: 30px 20px;
 }
 
+/* Georgia is used for headings, while Arial is used for body text. */
 h1 {
+    font-family: Georgia, serif;
     margin: 0 0 15px;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    color: #73628A;
+}
+
+h3 {
+    font-family: Georgia, serif;
+    color: #73628A;
 }
 
 nav a {
@@ -29,15 +42,12 @@ nav a:hover {
 }
 
 main {
+    /* White is used to keep the main content clean and easy to read. */
     background-color: white;
     max-width: 1000px;
     margin: 30px auto;
     padding: 30px;
     border-radius: 12px;
-}
-
-h2, h3 {
-    color: #73628A;
 }
 
 footer {
@@ -54,4 +64,12 @@ footer a {
 img {
     max-width: 100%;
     height: auto;
+}
+
+/* Adjust the layout for smaller screens. */
+@media screen and (max-width: 600px) {
+    main {
+        padding: 20px;
+        margin: 15px 10px;
+    }
 }
