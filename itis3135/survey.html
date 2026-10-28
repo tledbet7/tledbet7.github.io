@@ -5,10 +5,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Tiffany Ledbetter's Thriving Ladybug | ITIS3135 | Survey</title>
 
     <link rel="icon" type="image/png" href="images/favicon-ladybug.png">
     <link rel="stylesheet" href="styles/default.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+    <style>
+        .survey-intro {
+            font-family: "DM Sans", Arial, sans-serif;
+            font-size: 1rem;
+            line-height: 1.7;
+            max-width: 700px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .survey-image {
+            display: block;
+            max-width: 180px;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 12px;
+        }
+
+        #survey-form {
+            max-width: 650px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: #fdf5fc;
+            border: 2px solid #d6b8d8;
+            border-radius: 18px;
+            box-shadow: 0 4px 12px rgba(103, 73, 112, 0.12);
+            font-family: "DM Sans", Arial, sans-serif;
+            color: #51465d;
+            box-sizing: border-box;
+        }
+
+        .survey-field {
+            margin-bottom: 20px;
+        }
+
+        .survey-label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #694775;
+        }
+
+        .survey-input,
+        .survey-select,
+        .survey-textarea {
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #b99bbf;
+            border-radius: 8px;
+            background-color: #ffffff;
+            color: #51465d;
+            font-family: "DM Sans", Arial, sans-serif;
+            font-size: 0.95rem;
+        }
+
+        .survey-fieldset {
+            border: 1px solid #d6b8d8;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        .survey-legend {
+            font-weight: 600;
+            color: #694775;
+            padding: 0 5px;
+        }
+
+        .survey-choice {
+            display: block;
+            margin: 10px 0;
+            font-size: 0.95rem;
+        }
+
+        .survey-choice input {
+            margin-right: 8px;
+            accent-color: #805b89;
+        }
+
+        .survey-button {
+            display: block;
+            padding: 13px;
+            background-color: #805b89;
+            color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            font-family: "DM Sans", Arial, sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .survey-button:hover {
+            background-color: #694775;
+        }
+
+        @media (max-width: 600px) {
+            #survey-form {
+                padding: 18px;
+            }
+        }
+    </style>
 
     <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
@@ -16,96 +126,148 @@
 
 <body>
 
-    <!-- Shared site header -->
     <div data-include="components/header.html"></div>
 
     <main>
         <h2>Survey</h2>
 
         <figure>
-            <img src="images/abstract-circle.png"
-                 alt="Purple futuristic digital circle with glowing orbital rings"
-                 width="300">
-            <figcaption>Creative Technology and Digital Design</figcaption>
+            <img class="survey-image"
+                 src="images/abstract-circle.png"
+                 alt="Purple digital circle representing creativity and new possibilities"
+                 width="180">
+            <figcaption>Creativity, Growth, and New Possibilities</figcaption>
         </figure>
 
-        <p>
-            Welcome to my survey! This survey is about students and their
-            experiences with learning web development.
+        <p class="survey-intro">
+            Welcome to the Thriving Ladybug Creativity &amp; Personal
+            Growth Survey! Everyone has different interests, goals,
+            and ways of expressing themselves. This survey is a fun
+            way to learn more about what inspires you and how you
+            continue to grow.
         </p>
-
-        <!-- IDs are used to connect form labels to their inputs and identify form elements. -->
         <form id="survey-form">
-            <!-- Collect basic information about the student. -->
-            <p>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+
+            <p class="survey-field">
+                <label class="survey-label" for="name">Your Name:</label>
+                <input class="survey-input"
+                       type="text"
+                       id="name"
+                       name="name"
+                       placeholder="Enter your name"
+                       required>
             </p>
 
-            <p>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+            <p class="survey-field">
+                <label class="survey-label" for="email">Email Address:</label>
+                <input class="survey-input"
+                       type="email"
+                       id="email"
+                       name="email"
+                       placeholder="Enter your email"
+                       required>
             </p>
 
-            <p>
-                <label for="number">How many years have you been coding?</label>
-                <input type="number" id="number" name="years" min="0" max="50">
+            <p class="survey-field">
+                <label class="survey-label" for="number">
+                    How many hours a week do you spend on creative activities?
+                </label>
+                <input class="survey-input"
+                       type="number"
+                       id="number"
+                       name="creative-hours"
+                       min="0"
+                       max="168"
+                       placeholder="Enter a number">
             </p>
 
-            <p>
-                <label for="dropdown">What is your experience level?</label>
-                <select id="dropdown" name="experience">
+            <p class="survey-field">
+                <label class="survey-label" for="dropdown">
+                    What best describes your creative experience?
+                </label>
+                <select class="survey-select"
+                        id="dropdown"
+                        name="experience"
+                        required>
                     <option value="">Select an option</option>
-                    <option value="beginner">Beginner</option>
-                    <option value="intermediate">Intermediate</option>
-                    <option value="advanced">Advanced</option>
+                    <option value="beginner">Just Getting Started</option>
+                    <option value="exploring">Exploring New Hobbies</option>
+                    <option value="experienced">Pretty Experienced</option>
+                    <option value="passionate">Creativity Is My Passion</option>
                 </select>
             </p>
 
-            <fieldset>
-                <legend>Do you enjoy learning web development?</legend>
+            <fieldset class="survey-fieldset">
+                <legend class="survey-legend">
+                    Do you enjoy trying new creative activities?
+                </legend>
 
-                <label>
-                    <input type="radio" name="enjoy" value="yes">
-                    Yes
+                <label class="survey-choice">
+                    <input type="radio" name="enjoy" value="yes" required>
+                    Yes, I Love It!
                 </label>
 
-                <label>
-                    <input type="radio" name="enjoy" value="no">
-                    No
-                </label>
-            </fieldset>
-
-            <fieldset>
-                <legend>What topics are you interested in?</legend>
-
-                <label>
-                    <input type="checkbox" name="topics" value="html">
-                    HTML
+                <label class="survey-choice">
+                    <input type="radio" name="enjoy" value="sometimes">
+                    Sometimes
                 </label>
 
-                <label>
-                    <input type="checkbox" name="topics" value="css">
-                    CSS
-                </label>
-
-                <label>
-                    <input type="checkbox" name="topics" value="javascript">
-                    JavaScript
+                <label class="survey-choice">
+                    <input type="radio" name="enjoy" value="not-yet">
+                    Not Yet, but I'm Open to It
                 </label>
             </fieldset>
 
-            <p>
-                <label for="comments">Additional Comments:</label>
-                <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+            <fieldset class="survey-fieldset">
+                <legend class="survey-legend">
+                    Which activities interest you? Select all that apply.
+                </legend>
+
+                <label class="survey-choice">
+                    <input type="checkbox" name="interests" value="art">
+                    Drawing &amp; Coloring
+                </label>
+
+                <label class="survey-choice">
+                    <input type="checkbox" name="interests" value="writing">
+                    Writing &amp; Journaling
+                </label>
+
+                <label class="survey-choice">
+                    <input type="checkbox" name="interests" value="design">
+                    Digital Design
+                </label>
+
+                <label class="survey-choice">
+                    <input type="checkbox" name="interests" value="crafts">
+                    DIY Projects &amp; Crafts
+                </label>
+
+                <label class="survey-choice">
+                    <input type="checkbox" name="interests" value="reading">
+                    Reading &amp; Learning
+                </label>
+            </fieldset>
+
+            <p class="survey-field">
+                <label class="survey-label" for="comments">
+                    What is one goal or creative activity you'd like to try?
+                </label>
+                <textarea class="survey-textarea"
+                          id="comments"
+                          name="comments"
+                          rows="5"
+                          placeholder="Share your ideas or goals here..."></textarea>
             </p>
 
-            <button type="submit" id="submit">Submit</button>
+            <button class="survey-button" type="submit" id="submit">
+                Submit Survey
+            </button>
+
         </form>
 
     </main>
 
-    <!-- Shared site footer -->
     <div data-include="components/footer.html"></div>
 
     <script src="scripts/include.min.js"></script>

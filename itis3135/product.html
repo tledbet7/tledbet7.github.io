@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tiffany Ledbetter's Thriving Ladybug | ITIS3135 | Product Landing</title>
+
+    <link rel="icon" type="image/png" href="images/favicon-ladybug.png">
+    <link rel="stylesheet" href="styles/default.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+    <!--
+        Page-specific classes and IDs organize the product landing page.
+        Light pink backgrounds and dark purple text improve readability.
+        White is used for contrast on the buttons and form fields.
+    -->
+    <style>
+        .product-intro {
+            font-family: "DM Sans", Arial, sans-serif;
+            font-size: 1rem;
+            line-height: 1.7;
+            max-width: 750px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .product-image {
+            display: block;
+            max-width: 180px;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 12px;
+        }
+
+        .product-section {
+            max-width: 850px;
+            margin: 25px auto;
+            padding: 25px;
+            background-color: #fdf5fc;
+            border: 1px solid #d6b8d8;
+            border-radius: 15px;
+            font-family: "DM Sans", Arial, sans-serif;
+            color: #51465d;
+            line-height: 1.7;
+            box-sizing: border-box;
+        }
+
+        .product-heading {
+            font-family: "DM Serif Display", Georgia, serif;
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #694775;
+            margin-top: 0;
+        }
+
+        .product-features {
+            padding-left: 25px;
+        }
+
+        .product-features li {
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-family: "DM Serif Display", Georgia, serif;
+            font-size: 2rem;
+            color: #805b89;
+            text-align: center;
+            margin: 15px 0;
+        }
+
+        .product-button {
+            display: block;
+            max-width: 250px;
+            margin: 20px auto;
+            padding: 13px 20px;
+            background-color: #805b89;
+            color: #ffffff;
+            border-radius: 10px;
+            font-family: "DM Sans", Arial, sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .product-button:visited {
+            color: #ffffff;
+        }
+
+        .product-button:hover {
+            background-color: #694775;
+        }
+
+        .product-nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 25px auto;
+            font-family: "DM Sans", Arial, sans-serif;
+        }
+
+        .product-nav a {
+            color: #694775;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .product-nav a:visited {
+            color: #694775;
+        }
+
+        .product-nav a:hover {
+            text-decoration: underline;
+        }
+
+        .product-email {
+            display: block;
+            max-width: 400px;
+            margin: 15px auto;
+            padding: 12px;
+            border: 1px solid #b99bbf;
+            border-radius: 8px;
+            background-color: #ffffff;
+            color: #51465d;
+            font-family: "DM Sans", Arial, sans-serif;
+            font-size: 0.95rem;
+            box-sizing: border-box;
+        }
+
+        .product-label {
+            display: block;
+            text-align: center;
+            font-weight: 600;
+            color: #694775;
+        }
+
+        .product-note {
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .product-section {
+                padding: 15px;
+            }
+
+            .product-nav {
+                gap: 10px;
+            }
+        }
+    </style>
+
+    <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Div loads the shared header using the include script. -->
+    <div data-include="components/header.html"></div>
+
+    <main>
+        <h2>Product Landing</h2>
+
+        <nav class="product-nav" aria-label="Product navigation">
+            <a href="#about-product">About</a>
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#updates">Updates</a>
+        </nav>
+
+        <figure>
+            <img class="product-image"
+                 src="images/abstract-circle.png"
+                 alt="Purple digital circle representing creativity and possibilities"
+                 width="180">
+            <figcaption>Small Steps, Big Possibilities</figcaption>
+        </figure>
+
+        <p class="product-intro">
+            Meet the Thriving Ladybug Creative Planner!
+            A simple and inspiring way to organize your goals,
+            track your progress, and make room for creativity.
+            Every big accomplishment begins with one small step.
+        </p>
+
+        <!--
+            The product-section class creates consistent content panels.
+            The section IDs connect the product navigation to each section.
+            Other classes style the headings, pricing, links, and form.
+        -->
+        <section class="product-section" id="about-product">
+            <h3 class="product-heading">About the Planner</h3>
+
+            <p>
+                The Thriving Ladybug Creative Planner is designed
+                for anyone who wants to stay organized while
+                making time for personal growth and creativity.
+                Whether you're planning your week, setting new
+                goals, or exploring hobbies, this planner helps
+                you stay focused on what matters.
+            </p>
+        </section>
+
+        <section class="product-section" id="features">
+            <h3 class="product-heading">Planner Features</h3>
+
+            <ul class="product-features">
+                <li>Weekly planning pages to organize your schedule.</li>
+                <li>Goal-setting sections for personal growth.</li>
+                <li>Creative spaces for ideas and inspiration.</li>
+                <li>Habit trackers to celebrate small improvements.</li>
+                <li>Reflection pages to recognize your progress.</li>
+            </ul>
+        </section>
+
+        <section class="product-section" id="pricing">
+            <h3 class="product-heading">Simple and Affordable</h3>
+
+            <p>
+                Our sample digital planner is designed to make
+                organizing your life simple and enjoyable.
+            </p>
+
+            <p class="product-price">$12.99</p>
+
+            <p class="product-note">
+                Example price for this class project.
+                This is not an active product listing.
+            </p>
+
+            <a class="product-button" href="#updates">
+                Learn More
+            </a>
+        </section>
+
+        <section class="product-section" id="updates">
+            <h3 class="product-heading">Stay Inspired</h3>
+
+            <p>
+                Interested in creative planning and personal
+                growth? Explore the other Thriving Ladybug pages
+                for more inspiration.
+            </p>
+
+            <form id="form" action="#updates">
+                <label class="product-label" for="email">
+                    Email Address:
+                </label>
+
+                <input class="product-email"
+                       type="email"
+                       id="email"
+                       name="email"
+                       placeholder="Enter your email"
+                       required>
+
+                <button class="product-button" type="submit" id="submit">
+                    Sign Up
+                </button>
+            </form>
+
+            <p class="product-note">
+                This is a demonstration form for a class project.
+                No email addresses are collected or stored.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Div loads the shared footer using the include script. -->
+    <div data-include="components/footer.html"></div>
+
+    <script src="scripts/include.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tiffany Ledbetter's Thriving Ladybug | ITIS3135 | Documentation</title>
+
+    <link rel="icon" type="image/png" href="images/favicon-ladybug.png">
+    <link rel="stylesheet" href="styles/default.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+    <!--
+        Page-specific classes and IDs organize the documentation.
+        Light pink backgrounds and dark purple text improve readability.
+        White is used for code examples to make them easy to read.
+    -->
+    <style>
+        .documentation-intro {
+            font-family: "DM Sans", Arial, sans-serif;
+            font-size: 1rem;
+            line-height: 1.7;
+            max-width: 750px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .documentation-image {
+            display: block;
+            max-width: 180px;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 12px;
+        }
+
+        .documentation-layout {
+            display: grid;
+            grid-template-columns: 220px minmax(0, 1fr);
+            gap: 25px;
+            max-width: 1000px;
+            margin: 30px auto;
+            align-items: start;
+        }
+
+        .documentation-nav {
+            background-color: #f7edf7;
+            border: 1px solid #d6b8d8;
+            border-radius: 12px;
+            padding: 15px;
+            font-family: "DM Sans", Arial, sans-serif;
+        }
+
+        .documentation-nav a {
+            display: block;
+            color: #694775;
+            text-decoration: none;
+            padding: 10px;
+            border-bottom: 1px solid #d6b8d8;
+            font-size: 0.95rem;
+        }
+
+        .documentation-nav a:visited {
+            color: #694775;
+        }
+
+        .documentation-nav a:hover {
+            background-color: #ead9eb;
+            border-radius: 6px;
+        }
+
+        .documentation-content {
+            min-width: 0;
+            font-family: "DM Sans", Arial, sans-serif;
+            color: #51465d;
+            line-height: 1.7;
+        }
+
+        .documentation-section {
+            background-color: #fdf5fc;
+            border: 1px solid #d6b8d8;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .documentation-heading {
+            font-family: "DM Serif Display", Georgia, serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #694775;
+            margin-top: 0;
+        }
+
+        .documentation-code {
+            display: block;
+            background-color: #ffffff;
+            border: 1px solid #d6b8d8;
+            border-radius: 8px;
+            padding: 15px;
+            overflow-x: auto;
+            font-family: monospace;
+            font-size: 0.9rem;
+            white-space: pre-wrap;
+            overflow-wrap: anywhere;
+        }
+
+        @media (max-width: 700px) {
+            .documentation-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .documentation-section {
+                padding: 15px;
+            }
+        }
+    </style>
+
+    <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Div loads the shared header using the include script. -->
+    <div data-include="components/header.html"></div>
+
+    <main>
+        <h2>Documentation</h2>
+
+        <figure>
+            <img class="documentation-image"
+                 src="images/abstract-circle.png"
+                 alt="Purple digital circle representing web development and technology"
+                 width="180">
+            <figcaption>Learning Web Development Step by Step</figcaption>
+        </figure>
+
+        <p class="documentation-intro">
+            Welcome to the Thriving Ladybug Web Development Guide!
+            This documentation explains the basic steps for creating
+            a webpage using HTML, CSS, and Visual Studio Code.
+            Every website starts with small steps that lead to
+            big possibilities.
+        </p>
+
+        <!--
+            The documentation-layout class creates the two-column layout.
+            The navigation links use section IDs to jump to each topic.
+            The content and section classes organize the documentation.
+        -->
+        <div class="documentation-layout">
+
+            <nav class="documentation-nav" aria-label="Documentation navigation">
+                <a href="#getting-started">Getting Started</a>
+                <a href="#html-basics">HTML Basics</a>
+                <a href="#adding-content">Adding Content</a>
+                <a href="#css-styling">CSS Styling</a>
+                <a href="#previewing">Previewing Your Webpage</a>
+            </nav>
+
+            <div class="documentation-content">
+
+                <section class="documentation-section" id="getting-started">
+                    <h3 class="documentation-heading">Getting Started</h3>
+
+                    <p>
+                        Before creating a webpage, you need a code editor
+                        and a folder to store your project files.
+                    </p>
+
+                    <ol>
+                        <li>Open Visual Studio Code.</li>
+                        <li>Create a new folder for your website.</li>
+                        <li>Open that folder in VS Code.</li>
+                        <li>Create a file named index.html.</li>
+                        <li>Create another file named style.css.</li>
+                    </ol>
+                </section>
+
+                <section class="documentation-section" id="html-basics">
+                    <h3 class="documentation-heading">HTML Basics</h3>
+
+                    <p>
+                        HTML provides the structure of a webpage.
+                        Every HTML document starts with a basic
+                        structure that includes a head and body.
+                    </p>
+
+                    <pre class="documentation-code"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;My First Webpage&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                </section>
+
+                <section class="documentation-section" id="adding-content">
+                    <h3 class="documentation-heading">Adding Content</h3>
+
+                    <p>
+                        You can add headings, paragraphs, images,
+                        and links to make your webpage more interesting.
+                    </p>
+
+                    <pre class="documentation-code"><code>&lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+&lt;p&gt;This is my first webpage.&lt;/p&gt;
+&lt;a href="about.html"&gt;About Me&lt;/a&gt;</code></pre>
+
+                    <p>
+                        Headings organize your content, paragraphs
+                        provide information, and links help visitors
+                        navigate between pages.
+                    </p>
+                </section>
+
+                <section class="documentation-section" id="css-styling">
+                    <h3 class="documentation-heading">CSS Styling</h3>
+
+                    <p>
+                        CSS controls the appearance of your webpage.
+                        You can change colors, fonts, spacing,
+                        and other design elements.
+                    </p>
+
+                    <pre class="documentation-code"><code>body {
+    background-color: lavender;
+    font-family: Arial, sans-serif;
+    color: #51465d;
+}
+
+h1 {
+    text-align: center;
+}</code></pre>
+
+                    <p>
+                        To connect your CSS file to your HTML,
+                        add this line inside the head section:
+                    </p>
+
+                    <pre class="documentation-code"><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+                </section>
+
+                <section class="documentation-section" id="previewing">
+                    <h3 class="documentation-heading">Previewing Your Webpage</h3>
+
+                    <p>
+                        Once your HTML and CSS files are ready,
+                        you can preview your webpage in a browser.
+                    </p>
+
+                    <ol>
+                        <li>Save your HTML and CSS files.</li>
+                        <li>Open your project in VS Code.</li>
+                        <li>Right-click your index.html file.</li>
+                        <li>Select Open with Live Server.</li>
+                        <li>Check your webpage in the browser.</li>
+                    </ol>
+
+                    <p>
+                        Continue practicing by adding more content
+                        and experimenting with different designs.
+                        Remember, small steps lead to big possibilities!
+                    </p>
+                </section>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Div loads the shared footer using the include script. -->
+    <div data-include="components/footer.html"></div>
+
+    <script src="scripts/include.min.js"></script>
+
+</body>
+
+</html>
