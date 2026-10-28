@@ -1,12 +1,12 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solitude in Color | Home</title>
+    <title>Solitude in Color | What: Welcome to Solitude in Color</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-
 
     <style>
         :root {
@@ -23,7 +23,8 @@
         }
 
         body {
-            margin: 0;
+            max-width: 1200px;
+            margin: 0 auto;
             background-color: var(--cream);
             color: var(--text);
             font-family: "Trebuchet MS", Arial, sans-serif;
@@ -37,10 +38,12 @@
         }
 
         h1 {
+            font-family: Georgia, serif;
             font-size: 2.5rem;
             margin: 0;
         }
 
+        /* The tagline class styles the text below the website name. */
         .tagline {
             margin: 5px 0 20px;
             font-style: italic;
@@ -54,9 +57,13 @@
             margin: auto;
         }
 
+        a,
+        a:visited {
+            color: var(--text);
+        }
+
         nav a {
             display: inline-block;
-            color: var(--text);
             text-decoration: none;
             font-weight: bold;
             padding: 5px 10px;
@@ -65,7 +72,7 @@
 
         nav a:hover,
         nav a:focus-visible,
-        nav a.active {
+        .active {
             background-color: var(--green);
             text-decoration: underline;
         }
@@ -78,6 +85,7 @@
         }
 
         section {
+            /* White makes the content easier to read. */
             background-color: #FFFFFF;
             border: 3px solid var(--lavender);
             border-radius: 20px;
@@ -90,9 +98,14 @@
         }
 
         h2 {
+            font-family: Georgia, serif;
             color: #66508A;
             border-bottom: 4px solid var(--green);
             padding-bottom: 10px;
+        }
+
+        h3 {
+            font-family: Georgia, serif;
         }
 
         figure {
@@ -115,6 +128,7 @@
             font-style: italic;
         }
 
+        /* The image-note class explains the source of each photograph. */
         .image-note {
             font-style: italic;
             font-size: 0.9rem;
@@ -128,10 +142,10 @@
         }
 
         footer a {
-            color: var(--text);
             font-weight: bold;
         }
 
+        /* The validation-links class organizes the validation links. */
         .validation-links {
             display: flex;
             justify-content: center;
@@ -154,11 +168,8 @@
             text-decoration: underline;
         }
 
+        /* Adjust the layout for smaller screens. */
         @media (max-width: 600px) {
-            h1 {
-                font-size: 2rem;
-            }
-
             nav {
                 border-radius: 15px;
             }
@@ -168,13 +179,21 @@
             }
         }
     </style>
+
+    <!-- Llama validator -->
+    <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+
+    <!-- Cloud validator -->
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
     <header>
         <h1>Solitude in Color</h1>
-        <p class="tagline">Making Quiet Moments Beautiful</p>
+        <p class="tagline"><em>Making Quiet Moments Beautiful</em></p>
 
+        <!-- Section IDs connect navigation links to their sections. -->
         <nav aria-label="Hobby navigation">
             <a href="#what" class="active" aria-current="page">What</a> ✿
             <a href="#who">Who</a> ✿
@@ -187,6 +206,7 @@
     </header>
 
     <main>
+
         <section id="what">
             <h2>What: Welcome to Solitude in Color</h2>
 
@@ -207,19 +227,22 @@
             </p>
 
             <figure>
-                <img src="images/IMG_2546.jpeg"
+                <img src="images/rainy-day-bear.jpeg"
                      alt="A bear in a raincoat holding an umbrella beside kittens"
                      loading="lazy">
+
                 <figcaption>
                     A rainy-day bear and kittens from one of my
                     coloring books.
+
+                    <p class="image-note">
+                        <em>
+                            This is my own photograph of a coloring page.
+                            No AI prompt was used to generate the image.
+                        </em>
+                    </p>
                 </figcaption>
             </figure>
-
-            <p class="image-note">
-                This is my own photograph of a coloring page.
-                No AI prompt was used to generate the image.
-            </p>
         </section>
 
         <section id="who" hidden>
@@ -241,18 +264,21 @@
             </p>
 
             <figure>
-                <img src="images/IMG_2548.jpeg"
+                <img src="images/lemonade-stand.jpeg"
                      alt="A bear holding lemonade beside a colorful lemonade stand"
                      loading="lazy">
+
                 <figcaption>
                     A colorful lemonade stand scene from my collection.
+
+                    <p class="image-note">
+                        <em>
+                            This is a personal photograph of my coloring work.
+                            No AI image-generation prompt was used.
+                        </em>
+                    </p>
                 </figcaption>
             </figure>
-
-            <p class="image-note">
-                This is a personal photograph of my coloring work.
-                No AI image-generation prompt was used.
-            </p>
         </section>
 
         <section id="when" hidden>
@@ -271,18 +297,21 @@
             </p>
 
             <figure>
-                <img src="images/IMG_2545.jpeg"
+                <img src="images/cozy-reading.jpeg"
                      alt="A cozy indoor scene with a character reading beside a duck"
                      loading="lazy">
+
                 <figcaption>
                     A cozy reading scene with soft pink and green details.
+
+                    <p class="image-note">
+                        <em>
+                            I photographed this coloring page myself.
+                            AI was not used to generate the image.
+                        </em>
+                    </p>
                 </figcaption>
             </figure>
-
-            <p class="image-note">
-                I photographed this coloring page myself.
-                AI was not used to generate the image.
-            </p>
         </section>
 
         <section id="where" hidden>
@@ -302,18 +331,21 @@
             </p>
 
             <figure>
-                <img src="images/IMG_2547.jpeg"
+                <img src="images/autumn-garden.jpeg"
                      alt="An autumn garden with pumpkins, a small house, and cute characters"
                      loading="lazy">
+
                 <figcaption>
                     A warm autumn garden scene from my coloring book.
+
+                    <p class="image-note">
+                        <em>
+                            This is my own photograph.
+                            No AI image-generation prompt was used.
+                        </em>
+                    </p>
                 </figcaption>
             </figure>
-
-            <p class="image-note">
-                This is my own photograph.
-                No AI image-generation prompt was used.
-            </p>
         </section>
 
         <section id="how" hidden>
@@ -337,19 +369,22 @@
             </p>
 
             <figure>
-                <img src="images/IMG_2543.jpeg"
+                <img src="images/bear-with-flower.jpeg"
                      alt="A brown bear holding a flower surrounded by blue flowers"
                      loading="lazy">
+
                 <figcaption>
                     A cute bear holding a flower from my Berrie
                     coloring book.
+
+                    <p class="image-note">
+                        <em>
+                            This is my personal photograph.
+                            AI was not used to generate the image.
+                        </em>
+                    </p>
                 </figcaption>
             </figure>
-
-            <p class="image-note">
-                This is my personal photograph.
-                AI was not used to generate the image.
-            </p>
         </section>
 
         <section id="why" hidden>
@@ -370,19 +405,22 @@
             </p>
 
             <figure>
-                <img src="images/IMG_2544.jpeg"
+                <img src="images/bear-on-swing.jpeg"
                      alt="A brown bear sitting on a swing surrounded by flowers and bees"
                      loading="lazy">
+
                 <figcaption>
                     A cute little bear illustration from my Berrie
                     Coloring book.
+
+                    <p class="image-note">
+                        <em>
+                            This photograph is my own work.
+                            No AI image-generation prompt was used.
+                        </em>
+                    </p>
                 </figcaption>
             </figure>
-
-            <p class="image-note">
-                This photograph is my own work.
-                No AI image-generation prompt was used.
-            </p>
         </section>
 
         <section id="ai-prompts" hidden>
@@ -402,19 +440,22 @@
             </p>
 
             <figure>
-                <img src="images/IMG_2542.jpeg"
+                <img src="images/mouse-duck-groceries.jpeg"
                      alt="A mouse and yellow duck surrounded by colorful groceries in a refrigerator"
                      loading="lazy">
+
                 <figcaption>
                     A mouse and duck surrounded by colorful groceries
                     in one of my completed coloring pages.
+
+                    <p class="image-note">
+                        <em>
+                            No AI image-generation prompt was used.
+                            This is an original photograph of my coloring work.
+                        </em>
+                    </p>
                 </figcaption>
             </figure>
-
-            <p class="image-note">
-                No AI image-generation prompt was used.
-                This is an original photograph of my coloring work.
-            </p>
 
             <h3>Examples of AI Assistance</h3>
 
@@ -437,14 +478,13 @@
                 </li>
             </ul>
         </section>
+
     </main>
 
     <footer>
         <p>
             Page designed by
-            <a href="../tlwebdesigns.com/index.html">
-                TL Web Designs
-            </a>
+            <a href="../tlwebdesigns.com/index.html">TL Web Designs</a>
         </p>
 
         <p>&copy; 2026 Solitude in Color</p>
@@ -486,6 +526,10 @@
             if (!selectedSection) {
                 return;
             }
+
+            // Update the title to match the visible section heading.
+            const heading = selectedSection.querySelector("h2");
+            document.title = "Solitude in Color | " + heading.textContent;
 
             sections.forEach((section) => {
                 section.hidden = section.id !== sectionId;
@@ -532,5 +576,7 @@
             );
         });
     </script>
+
 </body>
+
 </html>

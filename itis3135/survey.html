@@ -5,24 +5,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiffany Ledbetter ~ Thriving Ladybug | Survey</title>
+    <title>Tiffany Ledbetter's Thriving Ladybug | ITIS3135 | Survey</title>
+
     <link rel="icon" type="image/png" href="images/favicon-ladybug.png">
     <link rel="stylesheet" href="styles/default.css">
+
+    <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
+    <!-- Shared site header -->
     <div data-include="components/header.html"></div>
 
     <main>
         <h2>Survey</h2>
-        <p>This page will contain my Survey Form certification project.</p>
+
+        <figure>
+            <img src="images/abstract-circle.png"
+                 alt="Purple futuristic digital circle with glowing orbital rings"
+                 width="300">
+            <figcaption>Creative Technology and Digital Design</figcaption>
+        </figure>
+
+        <p>
+            Welcome to my survey! This survey is about students and their
+            experiences with learning web development.
+        </p>
+
+        <!-- IDs are used to connect form labels to their inputs and identify form elements. -->
+        <form id="survey-form">
+            <!-- Collect basic information about the student. -->
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </p>
+
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="number">How many years have you been coding?</label>
+                <input type="number" id="number" name="years" min="0" max="50">
+            </p>
+
+            <p>
+                <label for="dropdown">What is your experience level?</label>
+                <select id="dropdown" name="experience">
+                    <option value="">Select an option</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+            </p>
+
+            <fieldset>
+                <legend>Do you enjoy learning web development?</legend>
+
+                <label>
+                    <input type="radio" name="enjoy" value="yes">
+                    Yes
+                </label>
+
+                <label>
+                    <input type="radio" name="enjoy" value="no">
+                    No
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>What topics are you interested in?</legend>
+
+                <label>
+                    <input type="checkbox" name="topics" value="html">
+                    HTML
+                </label>
+
+                <label>
+                    <input type="checkbox" name="topics" value="css">
+                    CSS
+                </label>
+
+                <label>
+                    <input type="checkbox" name="topics" value="javascript">
+                    JavaScript
+                </label>
+            </fieldset>
+
+            <p>
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+            </p>
+
+            <button type="submit" id="submit">Submit</button>
+        </form>
+
     </main>
 
+    <!-- Shared site footer -->
     <div data-include="components/footer.html"></div>
 
     <script src="scripts/include.min.js"></script>
-    <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+
 </body>
 
 </html>

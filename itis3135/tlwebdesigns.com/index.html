@@ -5,14 +5,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TL Web Designs | Creative Web Solutions</title>
+    <title>TL Web Designs | Home</title>
+    <link rel="icon" type="image/png" href="images/tl-web-designs-logo.png">
 
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #EAEAEA;
             color: #313D5A;
-            margin: 0;
+            max-width: 1200px;
+            margin: 0 auto;
             line-height: 1.6;
         }
 
@@ -23,6 +25,7 @@
             padding: 30px 20px;
         }
 
+        /* The brand class uses flexbox to place the logo and name together. */
         .brand {
             display: flex;
             align-items: center;
@@ -38,6 +41,7 @@
         }
 
         h1 {
+            font-family: Georgia, serif;
             margin: 0;
             font-size: 2.2rem;
         }
@@ -50,17 +54,30 @@
             max-width: 900px;
             margin: 30px auto;
             padding: 30px;
+            /* White provides a clean background and makes the text easier to read. */
             background-color: white;
             border-radius: 12px;
         }
 
-        h2, h3 {
+        h2 {
+            font-family: Georgia, serif;
+            color: #73628A;
+            border-bottom: 3px solid #CBC5EA;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-family: Georgia, serif;
             color: #73628A;
         }
 
-        h2 {
-            border-bottom: 3px solid #CBC5EA;
-            padding-bottom: 10px;
+        a,
+        a:visited {
+            color: #CBC5EA;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
 
         ul {
@@ -96,6 +113,7 @@
             margin: 5px 0;
         }
 
+        /* Adjust the layout for smaller screens. */
         @media (max-width: 600px) {
             .brand {
                 flex-direction: column;
@@ -106,27 +124,27 @@
                 width: 110px;
             }
 
-            h1 {
-                font-size: 1.8rem;
-            }
-
             main {
                 margin: 15px;
                 padding: 20px;
             }
         }
     </style>
+
+    <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
     <header>
+        <!-- The div with the brand class groups the logo and company name. -->
         <div class="brand">
             <img src="images/tl-web-designs-logo.png"
                  alt="TL Web Designs logo">
             <h1>TL Web Designs</h1>
         </div>
-        <p>Design • Develop • Elevate</p>
+        <p><em>Design • Develop • Elevate</em></p>
     </header>
 
     <main>
@@ -179,7 +197,7 @@
                 <strong>TL Web Designs</strong><br>
                 Phone: (704) 555-7733<br>
                 Email: info@tlwebdesigns.com<br>
-                Address: 347 Web development Lane,
+                Address: 347 Web Development Lane,
                 Charlotte, NC 28202
             </address>
         </section>
@@ -187,7 +205,7 @@
 
     <footer>
         <p>Page created by TL Web Designs</p>
-        <p>&copy; 2026 TL Web Designs</p>
+        <p>TL Web Designs &copy;2026</p>
     </footer>
 
 </body>

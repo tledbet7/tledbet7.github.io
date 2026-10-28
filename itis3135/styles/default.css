@@ -31,6 +31,15 @@ h3 {
     color: #73628A;
 }
 
+/* Make the introduction display name large and keep it on one line. */
+h6 {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    color: #73628A;
+    text-align: center;
+    white-space: nowrap;
+}
+
 nav a {
     color: #CBC5EA;
     margin: 0 8px;
@@ -64,6 +73,43 @@ footer a {
 img {
     max-width: 100%;
     height: auto;
+}
+
+/* Playing Cards */
+
+/* The playing-cards ID uses flexbox to arrange the cards. */
+#playing-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Card classes control the layout and position of each playing card. */
+.card {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 150px;
+    min-height: 220px;
+    padding: 15px;
+    border: 2px solid #313D5A;
+    border-radius: 10px;
+    background-color: #EAEAEA;
+    font-size: 24px;
+}
+
+.left {
+    align-self: flex-start;
+}
+
+.middle {
+    align-self: center;
+    font-size: 40px;
+}
+
+.right {
+    align-self: flex-end;
 }
 
 /* Adjust the layout for smaller screens. */
